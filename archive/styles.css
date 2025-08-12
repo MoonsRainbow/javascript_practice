@@ -1,0 +1,17 @@
+body {
+	background-color: beige;
+}
+
+h1 {
+	color: cornflowerblue;
+	transition: color 0.1s ease-in-out;
+}
+
+.active {
+	color: tomato;
+}
+
+.sexy-font {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

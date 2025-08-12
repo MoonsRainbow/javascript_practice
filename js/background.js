@@ -9,9 +9,8 @@ const images = [
 	"7.jpg",
 ];
 
+const bgImage = document.getElementById("bg-image");
+
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImage = document.createElement("img");
 bgImage.src = `resources/img/${chosenImage}`;
-
-document.body.appendChild(bgImage);

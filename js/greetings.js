@@ -1,5 +1,6 @@
 const loginForm = document.getElementById("login-form");
-const greeting = document.getElementById("greeting");
+const greetingContainer = document.getElementById("greeting");
+const greetingText = document.querySelector("#greeting h1");
 
 const HIDDEN_CLASS = "hidden";
 const USERNAME_KEY = "username";
@@ -12,8 +13,8 @@ function onLoginSubmit(e) {
 }
 
 function addGreeting(username) {
-	greeting.classList.remove(HIDDEN_CLASS);
-	greeting.innerText = `Hello ${username}`;
+	greetingContainer.classList.remove(HIDDEN_CLASS);
+	greetingText.innerText = `Hello ${username}!`;
 }
 
 const username = localStorage.getItem(USERNAME_KEY);

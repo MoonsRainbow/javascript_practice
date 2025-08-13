@@ -5,10 +5,10 @@ function onGeoSuccess(p) {
 	fetch(uri)
 		.then((res) => res.json())
 		.then((data) => {
-			const cityElement = document.getElementById("weather__city");
-			const weatherElement = document.getElementById("weather__weather");
-			cityElement.innerText = `${data.name} ${data.main.temp}°C`;
-			weatherElement.innerText = data.weather[0].main;
+			const weatherElement = document.getElementById("weather__text");
+			weatherElement.innerText = `${data.name} ${Math.round(
+				data.main.temp
+			)}°C ${data.weather[0].main}`;
 		});
 }
 

@@ -1,0 +1,35 @@
+#quote {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	gap: 20px;
+}
+
+@keyframes fadeInDown {
+	from {
+		transform: translateY(-30px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.quote__text {
+	display: flex;
+	height: 10px;
+	font-size: 14px;
+	transition: font-size 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.quote__author {
+	font-size: 14px;
+	opacity: 0;
+}
+.quote__text:hover {
+	font-size: 16px;
+}
+.quote__text:hover + .quote__author {
+	animation: fadeInDown 1s ease-in-out forwards;
+}

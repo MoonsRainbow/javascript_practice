@@ -1,0 +1,9 @@
+.greeting__text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 22px;
+	padding-bottom: 7px;
+	margin-bottom: 15px;
+	font-size: var(--header-font-size);
+}

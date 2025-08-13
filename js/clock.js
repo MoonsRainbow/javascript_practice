@@ -12,7 +12,15 @@ const monthNames = [
 	"November",
 	"December",
 ];
-const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const dayNames = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday",
+];
 const clockDate = document.getElementById("clock__date");
 const clockTime = document.getElementById("clock__time");
 

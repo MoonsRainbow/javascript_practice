@@ -1,0 +1,15 @@
+.clock {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+#clock__date {
+	font-size: var(--header-font-size);
+}
+
+#clock__time {
+	font-size: 80px;
+}

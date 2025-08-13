@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Memontum - Write a To Do</title>
+		<link
+			rel="stylesheet"
+			href="css/style.css"
+		/>
+	</head>
+	<body>
+		<div class="page">
+			<div class="header">
+				<div class="weather">
+					<h2 id="weather__text"></h2>
+				</div>
+				<div class="clock">
+					<h2 id="clock__date">0000.00.00 (0)</h2>
+					<h2 id="clock__time">00:00</h2>
+				</div>
+				<form
+					id="login-form"
+					class="hidden"
+				>
+					<div class="login-form">
+						<input
+							id="username"
+							class="login-form__input"
+							type="text"
+							placeholder="What is your name?"
+							required
+							minlength="3"
+							maxlength="15"
+						/>
+						<button
+							class="login-form__submit"
+							type="submit"
+							value="Log In"
+						>
+							<i class="icon-log-in"></i>
+						</button>
+					</div>
+				</form>
+				<div
+					id="greeting"
+					class="hidden"
+				>
+					<h1 class="greeting__text"></h1>
+				</div>
+				<form id="todo-form">
+					<input
+						id="newTodoItem"
+						class="todo-form__input"
+						type="text"
+						placeholder="Write a To Do and Press Enter."
+						required
+						maxlength="30"
+					/>
+				</form>
+				<ul id="todo-list"></ul>
+			</div>
+			<div class="footer">
+				<div id="quote">
+					<span class="quote__text"></span><span class="quote__author"></span>
+				</div>
+			</div>
+			<div id="bg-layer"><span></span></div>
+			<img
+				src="#"
+				id="bg-image"
+			/>
+		</div>
+		<script src="js/greetings.js"></script>
+		<script src="js/clock.js"></script>
+		<script src="js/quotes.js"></script>
+		<script src="js/background.js"></script>
+		<script src="js/todo.js"></script>
+		<script src="js/weather.js"></script>
+	</body>
+</html>

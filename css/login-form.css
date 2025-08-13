@@ -1,0 +1,17 @@
+.login-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.login-form__input {
+	width: 240px;
+}
+.login-form__submit {
+	height: 100%;
+	margin-top: 6px;
+	font-size: 30px;
+	border: none;
+	background: none;
+	color: white;
+}
